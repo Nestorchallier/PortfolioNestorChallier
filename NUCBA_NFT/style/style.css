@@ -1,0 +1,71 @@
+/*css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/*bg-color*/
+:root{
+  --background #0466C8;
+  --primary: #0353A4;
+  --secondary: #023E7D;
+  --bg-navbar: #001845;
+  --bg-card: #33415C;
+  --bg-cardII: #5C677D;
+  --bg-cardIII: #979DAC;
+  --bg-secodary: #002855;
+  --colorText: #E8E9EB;
+  --colorTextII: #F4F4F5;
+
+}
+
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: none;
+  list-style: none;
+  font-family: "poppins";
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0px 30px 0px 30px;
+  position: fixed;
+  top: 0%;
+  background-color: var(--bg-navbar);
+  text-decoration: none;
+}
+
+.logo{
+  height: 100%;
+}
+
+.cart-icon{
+  height: 25px;
+  padding: 0px 45px 0px 30px;
+}
+
+.navbar,
+.navbar-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar{
+  gap: 120px;
+}
+
+.navbar-list{
+  gap: 30px;
+}
+
+.navbar-list a{
+  text-decoration: none;
+  color: var(--colorText);
+  font-size: 12px;
+}
+.navbar-list li:first-child > a {
+  color: var(--colorTextII);
+  font-weight: 600;
+}
