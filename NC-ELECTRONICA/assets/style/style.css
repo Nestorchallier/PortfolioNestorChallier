@@ -1,0 +1,241 @@
+/*css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/*bg-color*/
+:root {
+  --background2: #02050e;
+  --primary2: #1e50ff;
+  --secondary2: #272d37;
+  --btn-bg: #050d26;
+  --bg-azul: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+  --background #0466C8;
+  --primary: #0353A4;
+  --secondary: #023E7D;
+  --bg-navbar: #001845;
+  --bg-card: #33415C;
+  --bg-cardII: #5C677D;
+  --bg-cardIII: #979DAC;
+  --bg-secodary: #002855;
+  --colorText: #E8E9EB;
+  --colorTextII: #F4F4F5;
+}
+
+/*reset*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: none;
+  list-style: none;
+  font-family: "poppins";
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  top: 0%;
+  background: linear-gradient(0deg, rgb(58, 56, 82) 0%, rgb(148, 151, 210) 100%);
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 2%;
+  width: 250px;
+  height: 60px;
+}
+
+/*carrito de compras*/
+.cart-icon {
+  height: 25px;
+  padding: 0px 45px 0px 30px;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 100px;
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: var(--colorText);
+  font-size: 12px;
+}
+
+.navbar-list li:first-child>a {
+  color: var(--colorTextII);
+  font-weight: 600;
+}
+
+/*start second nav*/
+.second-nav {
+  width: 100%;
+  background-color: var(--bg-azul);
+  position: static;
+}
+
+.li-second-nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 25px;
+  padding: 0px 30px 0px 30px;
+  gap: 10px;
+  color: var(--secondary2);
+  font-size: 10px;
+}
+
+.li-second-nav a {
+  text-decoration: none;
+}
+
+.img-wpp {
+  width: 15px;
+  height: 15px;
+}
+
+.img-envio {
+  width: 15px;
+  height: 15px;
+}
+
+/*hero*/
+.container {
+  width: 100%;
+}
+
+#hero {}
+
+.img-hero {
+  width: 100%;
+  margin-top: 2.5%;
+}
+/* card nombre */
+.article-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0% 0 0;
+}
+
+.container-info {
+  width: 620px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: rgb(237, 238, 240);
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.info-card {
+  width: 400px;
+  height: 120px;
+  font-size: 16px;
+  background-color: rgb(210, 210, 208);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-card {
+  display: flex;
+  padding: 10px;
+
+}
+
+.img-card {
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
+}
+
+.card-h2-nc{
+  font-size: 23px;
+
+}
+
+/* info nosotros */
+.card-h2-nst{
+  font-size: 28px;
+}
+
+.hero-card-info {
+  width: 600px;
+  height: 220px;
+  font-size: 15px;
+  background-image: url(/NC-ELECTRONICA/assets/img/nubes-transparente.png);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0 0 3% 15% ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer {
+  background: linear-gradient(0deg, rgb(58, 56, 82) 0%, rgb(148, 151, 210) 100%);
+  color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 20px 0;
+}
+
+footer a,
+footer p {
+  color: var(--colorText);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+footer span {
+  font-weight: 800;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
