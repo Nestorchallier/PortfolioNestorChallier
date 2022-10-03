@@ -1,0 +1,111 @@
+/*CSS media query */
+
+@media screen and (max-width: 1150px) {
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .name-produc h1 {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .name-produc h1 {
+    width: 50%;
+  }
+
+  .img-hero {
+    height: 200px;
+  }
+    .container-info-quienes-somos {
+      width: 70%;
+      padding: 20px;
+      margin-top: 10px;
+      gap: 5px;
+    }
+  
+    .container-info {
+      width: 70%;
+      padding: 5px;
+      margin-top: 10px;
+      gap: 5px;
+    }
+}
+@media screen and (max-width: 420px){
+  .container-info {
+    display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .navbar-list {
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    right: 15%;
+    width: 60%;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(9, 149, 150, 1) 0%, rgba(2, 143, 255, 1) 80%);
+    border: 4px solid var(--secondary);
+    border-top: 0px;
+    border-radius: 0 0 15px 15px;
+    align-items: flex-end;
+    padding: 25px 30px;
+    gap: 10px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar-list a {
+    font-size: 18px;
+  }
+
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #menu-toggle:checked+.navbar-list {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cart-item img {
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .cart {
+    width: 90%;
+    height: 90%;
+    padding-left: 40px;
+  }
+
+  .cart-item {
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--btn-bg);
+    border-radius: 20px;
+  }
+
+  .item-title {
+    font-size: 14px;
+  }
+
+  .item-precio {
+    font-size: 10px;
+  }
+
+  .item-handler {
+    gap: 15px;
+  }
+}
