@@ -12,6 +12,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/mediaQuery/MediaQuery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/animaciones.css" />
   </head>
 
   <!-- meta SEO -->
@@ -48,19 +50,14 @@
         <input type="checkbox" id="menu-toggle" />
 
         <ul class="navbar-list">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Clientes</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#info">Quienes somos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
         <!-- carrito de compas -->
         <label for="cart-toggle" class="cart-label">
-          <img
-            src="./assets/img/carrito compra.png"
-            alt="carrito de compras navbar"
-            class="cart-icon"
-          />
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
         </label>
         <input type="checkbox" name="" id="cart-toggle" />
 
@@ -174,6 +171,7 @@
           </div>
           <button class="btn-add">Comprar</button>
         </div>
+        <div class="overlay"></div>
         <!-- fin del carrito -->
       </nav>
     </header>
@@ -188,7 +186,7 @@
       </section>
       <!-- termina section -->
       <!-- inicia article -->
-      <article class="article-container">
+      <article id="info" class="article-container">
         <div class="container-info">
           <div class="info-card">
             <h2 class="card-h2-nc">NC-ELECTRONICA</h2>
@@ -215,7 +213,7 @@
       <!-- termina article 1-->
 
       <!-- inicia productos -->
-      <div class="name-produc">
+      <div id="productos" class="name-produc">
         <h1>Productos</h1>
       </div>
       <article class="container-productos">
@@ -339,7 +337,7 @@
     </main>
     <!-- termina main -->
     <!-- inicia contacto -->
-    <section class="container-form-contacto">
+    <section id="contacto" class="container-form-contacto">
       <div class="contactanos">
         <h1>CONTACTO</h1>
         <div class="contact-container">
@@ -381,6 +379,9 @@
         </ul>
       </div>
       <p>Desing by <span>NESTOR CHALLIER</span></p>
+
+div
+
     </footer>
     <!-- termina footer -->
   </body>

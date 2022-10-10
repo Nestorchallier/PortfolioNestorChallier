@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+:root {
+  --background: #131313;
+  --colores-iconos: #ffa400;
+  --color: #fc2933;
+  --color-text: #ffffff;
+  --button: linear-gradient(90deg, rgba(255, 161, 0, 1) 20%, rgba(251, 16, 61, 1) 95%);
+  --bg-card: rgba(37, 37, 37, 1);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background: var(--background);
+}
+
+/* CSS LO MAS POPULARES */
+
+.container-populares {
+  display: flex;
+  gap: 30px;
+}
+
+.card-populares1 {
+  width: 220px;
+  height: 200px;
+  display: flex;
+  background-color: var(--bg-card);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+
+.card-populares1 p {
+  font-size: 10px;
+  color: rgb(146, 142, 142);
+}
+
+.card-populares1 span {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(to right, #FFA100, #FF005C);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.card-info h2 {
+  font-size: 14px;
+}
+
+.card-populares1 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img-populares1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 210px;
+  height: 100px;
+  border-radius: 25px;
+}
+
+button {
+  width: 85px;
+  height: 30px;
+  border-radius: 15px;
+  background: linear-gradient(to right, #FFA100, #FF005C);
+  color: var(--color-text);
+}
+
+.button-add {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.title-card {
+  color: var(--color-text);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+  padding: 5px 0 5px 5px;
+}
