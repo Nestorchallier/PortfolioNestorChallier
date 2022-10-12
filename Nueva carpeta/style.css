@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
 
 :root {
-  --background: #131313;
+  --background: #131415;
   --colores-iconos: #ffa400;
   --color: #fc2933;
   --color-text: #ffffff;
@@ -23,29 +23,42 @@ body {
   background: var(--background);
 }
 
-/* CSS LO MAS POPULARES */
+/* CSS LO MAS POPULARES PARTE 1 */ 
 
-.container-populares {
+h1{
+  color: var(--color-text);
+  margin-left: 30px;
+  padding-top: 40px;
   display: flex;
-  gap: 30px;
+  justify-content:flex-start;
 }
 
-.card-populares1 {
-  width: 220px;
-  height: 200px;
+.container-populares {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.card-populares {
+  width: 282px;
+  height: 213px;
   display: flex;
   background-color: var(--bg-card);
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   border-radius: 15px;
 }
 
-.card-populares1 p {
-  font-size: 10px;
+.card-populares p {
+  font-size: 14px;
   color: rgb(146, 142, 142);
+  font-size: 400;
 }
 
-.card-populares1 span {
+.card-populares span {
   font-size: 18px;
   font-weight: 700;
   background: linear-gradient(to right, #FFA100, #FF005C);
@@ -54,25 +67,20 @@ body {
   -webkit-background-clip: text;
 }
 
-.card-info h2 {
-  font-size: 14px;
-}
-
-.card-populares1 button {
+.card-populares button {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.img-populares1 {
+.img-populares {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  width: 210px;
-  height: 100px;
+  width: 237px;
+  height: 97px;
   border-radius: 25px;
+  margin-top: 5px;
 }
 
 button {
@@ -81,6 +89,8 @@ button {
   border-radius: 15px;
   background: linear-gradient(to right, #FFA100, #FF005C);
   color: var(--color-text);
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .button-add {
@@ -95,6 +105,8 @@ button {
   color: var(--color-text);
   display: flex;
   justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .card-info {
@@ -102,5 +114,105 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   gap: 2px;
-  padding: 5px 0 5px 5px;
+  padding: 0 0 5px 5px;
+}
+
+/* ANIMACIONES LOS MAS POPULARES */
+
+.card-populares {
+  transition: all 200ms;
+  position: relative;
+}
+
+.card-populares:hover {
+  transform: scale(1.15);
+  z-index: 2;
+  border: solid 1px var(--color-text);
+}
+
+
+/* CSS LO MAS POPULARES PARTE 2 */
+
+section {
+  padding: 70px;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  gap: 20px;
+}
+
+/* estilado general de cada una de las pizzas*/
+.item {
+  width: 282px;
+  height: 213px;
+  background: #252525;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*estilado de las imagenes de las pizzas*/
+.item img {
+  width: 237px;
+  height: 97px;
+  border-radius: 16px;
+}
+
+.item img {
+  transition: transform 0, 5;
+}
+
+.item img:hover {
+  transform: scale(1.2);
+}
+
+/* estilado de la informacion que aparece debajo de las imagenes de las pizzas*/
+.info-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-top span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.info-top p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  opacity: 30%;
+}
+
+.info-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-bottom p {
+  font-size: 19px;
+  font-weight: 700;
+  background: linear-gradient(to right, #FFA100, #FF005C);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.info-bottom a {
+  background: linear-gradient(to right, #FFA100, #FF005C);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 8px 0px;
+  width: 86px;
+  border-radius: 17px;
+  font-size: 12px;
+  font-weight: 600;
 }
